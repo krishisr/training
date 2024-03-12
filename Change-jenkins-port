@@ -9,3 +9,13 @@ systemctl start jenkins
 systemctl status jenkins
 
 sudo lsof -i -P -n | grep ...
+
+Another method is 
+
+sudo nano /etc/default/jenkins open the nano file And change HTTP PORT:8080 to HTTP PORT : 8081
+
+CTL+X and Click Y and ENTER
+
+PORT will changing from 8080 to 8081 restart the jenkins
+
+sudo service jenkins restart

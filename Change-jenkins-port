@@ -12,7 +12,7 @@ sudo lsof -i -P -n | grep ...
 
 Another method is 
 
-sudo nano /etc/default/jenkins open the nano file And change HTTP PORT:8080 to HTTP PORT : 8081
+sudo nano /etc/default/jenkins open the nano file And change HTTP PORT:8080 to HTTP PORT : 8443
 
 CTL+X and Click Y and ENTER
 

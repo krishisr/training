@@ -60,7 +60,7 @@ environment {
     stage ('Docker Build') {
 	steps {
 	sh '''
-	docker build -t chinni4321/demo-batch-6:v1 /var/lib/jenkins/workspace/testdemo/
+	docker build -t krisshi/batch4:v2 /var/lib/jenkins/workspace/testdemo/
 	'''
 	}
 	}
@@ -68,7 +68,7 @@ environment {
     steps {
     script {
         withDockerRegistry(registry:[ credentialsId: 'Docker-cred']) {
-         sh 'docker push chinni4321/demo-batch-6:v1'
+         sh 'docker push krisshi/batch4:v2'
        }
        }
       }
